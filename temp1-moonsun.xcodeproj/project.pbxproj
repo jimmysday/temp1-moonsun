@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		F34BCD892DA997A100F321E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F34BCD702DA9979F00F321E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F34BCD772DA9979F00F321E7;
+			remoteInfo = "temp1-moonsun";
+		};
+		F34BCD932DA997A100F321E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F34BCD702DA9979F00F321E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F34BCD772DA9979F00F321E7;
+			remoteInfo = "temp1-moonsun";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F34BCD782DA9979F00F321E7 /* temp1-moonsun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "temp1-moonsun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34BCD882DA997A100F321E7 /* temp1-moonsunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "temp1-moonsunTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34BCD922DA997A100F321E7 /* temp1-moonsunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "temp1-moonsunUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F34BCD7A2DA9979F00F321E7 /* temp1-moonsun */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "temp1-moonsun";
+			sourceTree = "<group>";
+		};
+		F34BCD8B2DA997A100F321E7 /* temp1-moonsunTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "temp1-moonsunTests";
+			sourceTree = "<group>";
+		};
+		F34BCD952DA997A100F321E7 /* temp1-moonsunUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "temp1-moonsunUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F34BCD752DA9979F00F321E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34BCD852DA997A100F321E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34BCD8F2DA997A100F321E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F34BCD6F2DA9979F00F321E7 = {
+			isa = PBXGroup;
+			children = (
+				F34BCD7A2DA9979F00F321E7 /* temp1-moonsun */,
+				F34BCD8B2DA997A100F321E7 /* temp1-moonsunTests */,
+				F34BCD952DA997A100F321E7 /* temp1-moonsunUITests */,
+				F34BCD792DA9979F00F321E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F34BCD792DA9979F00F321E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F34BCD782DA9979F00F321E7 /* temp1-moonsun.app */,
+				F34BCD882DA997A100F321E7 /* temp1-moonsunTests.xctest */,
+				F34BCD922DA997A100F321E7 /* temp1-moonsunUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F34BCD772DA9979F00F321E7 /* temp1-moonsun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34BCD9C2DA997A100F321E7 /* Build configuration list for PBXNativeTarget "temp1-moonsun" */;
+			buildPhases = (
+				F34BCD742DA9979F00F321E7 /* Sources */,
+				F34BCD752DA9979F00F321E7 /* Frameworks */,
+				F34BCD762DA9979F00F321E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F34BCD7A2DA9979F00F321E7 /* temp1-moonsun */,
+			);
+			name = "temp1-moonsun";
+			packageProductDependencies = (
+			);
+			productName = "temp1-moonsun";
+			productReference = F34BCD782DA9979F00F321E7 /* temp1-moonsun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F34BCD872DA997A100F321E7 /* temp1-moonsunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34BCD9F2DA997A100F321E7 /* Build configuration list for PBXNativeTarget "temp1-moonsunTests" */;
+			buildPhases = (
+				F34BCD842DA997A100F321E7 /* Sources */,
+				F34BCD852DA997A100F321E7 /* Frameworks */,
+				F34BCD862DA997A100F321E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F34BCD8A2DA997A100F321E7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F34BCD8B2DA997A100F321E7 /* temp1-moonsunTests */,
+			);
+			name = "temp1-moonsunTests";
+			packageProductDependencies = (
+			);
+			productName = "temp1-moonsunTests";
+			productReference = F34BCD882DA997A100F321E7 /* temp1-moonsunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F34BCD912DA997A100F321E7 /* temp1-moonsunUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34BCDA22DA997A100F321E7 /* Build configuration list for PBXNativeTarget "temp1-moonsunUITests" */;
+			buildPhases = (
+				F34BCD8E2DA997A100F321E7 /* Sources */,
+				F34BCD8F2DA997A100F321E7 /* Frameworks */,
+				F34BCD902DA997A100F321E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F34BCD942DA997A100F321E7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F34BCD952DA997A100F321E7 /* temp1-moonsunUITests */,
+			);
+			name = "temp1-moonsunUITests";
+			packageProductDependencies = (
+			);
+			productName = "temp1-moonsunUITests";
+			productReference = F34BCD922DA997A100F321E7 /* temp1-moonsunUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F34BCD702DA9979F00F321E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					F34BCD772DA9979F00F321E7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					F34BCD872DA997A100F321E7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F34BCD772DA9979F00F321E7;
+					};
+					F34BCD912DA997A100F321E7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F34BCD772DA9979F00F321E7;
+					};
+				};
+			};
+			buildConfigurationList = F34BCD732DA9979F00F321E7 /* Build configuration list for PBXProject "temp1-moonsun" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F34BCD6F2DA9979F00F321E7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F34BCD792DA9979F00F321E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F34BCD772DA9979F00F321E7 /* temp1-moonsun */,
+				F34BCD872DA997A100F321E7 /* temp1-moonsunTests */,
+				F34BCD912DA997A100F321E7 /* temp1-moonsunUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F34BCD762DA9979F00F321E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34BCD862DA997A100F321E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34BCD902DA997A100F321E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F34BCD742DA9979F00F321E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34BCD842DA997A100F321E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34BCD8E2DA997A100F321E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F34BCD8A2DA997A100F321E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F34BCD772DA9979F00F321E7 /* temp1-moonsun */;
+			targetProxy = F34BCD892DA997A100F321E7 /* PBXContainerItemProxy */;
+		};
+		F34BCD942DA997A100F321E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F34BCD772DA9979F00F321E7 /* temp1-moonsun */;
+			targetProxy = F34BCD932DA997A100F321E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F34BCD9A2DA997A100F321E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F34BCD9B2DA997A100F321E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F34BCD9D2DA997A100F321E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"temp1-moonsun/Preview Content\"";
+				DEVELOPMENT_TEAM = C288ZN2FGM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.camosun.icsc0541501.temp1-moonsun";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F34BCD9E2DA997A100F321E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"temp1-moonsun/Preview Content\"";
+				DEVELOPMENT_TEAM = C288ZN2FGM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.camosun.icsc0541501.temp1-moonsun";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F34BCDA02DA997A100F321E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C288ZN2FGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.camosun.icsc0541501.temp1-moonsunTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/temp1-moonsun.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/temp1-moonsun";
+			};
+			name = Debug;
+		};
+		F34BCDA12DA997A100F321E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C288ZN2FGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.camosun.icsc0541501.temp1-moonsunTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/temp1-moonsun.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/temp1-moonsun";
+			};
+			name = Release;
+		};
+		F34BCDA32DA997A100F321E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C288ZN2FGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.camosun.icsc0541501.temp1-moonsunUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "temp1-moonsun";
+			};
+			name = Debug;
+		};
+		F34BCDA42DA997A100F321E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C288ZN2FGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.camosun.icsc0541501.temp1-moonsunUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "temp1-moonsun";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F34BCD732DA9979F00F321E7 /* Build configuration list for PBXProject "temp1-moonsun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34BCD9A2DA997A100F321E7 /* Debug */,
+				F34BCD9B2DA997A100F321E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34BCD9C2DA997A100F321E7 /* Build configuration list for PBXNativeTarget "temp1-moonsun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34BCD9D2DA997A100F321E7 /* Debug */,
+				F34BCD9E2DA997A100F321E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34BCD9F2DA997A100F321E7 /* Build configuration list for PBXNativeTarget "temp1-moonsunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34BCDA02DA997A100F321E7 /* Debug */,
+				F34BCDA12DA997A100F321E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34BCDA22DA997A100F321E7 /* Build configuration list for PBXNativeTarget "temp1-moonsunUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34BCDA32DA997A100F321E7 /* Debug */,
+				F34BCDA42DA997A100F321E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F34BCD702DA9979F00F321E7 /* Project object */;
+}
