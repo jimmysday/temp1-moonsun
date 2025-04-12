@@ -14,6 +14,7 @@ struct ContentView: View {
         //GaugeView()
         //GlobeView()
         TempView()
+        //PlaygroundView()
     }
 }
 

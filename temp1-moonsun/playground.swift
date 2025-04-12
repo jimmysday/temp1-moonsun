@@ -1,3 +1,30 @@
+import SwiftUI
+struct PlaygroundView: View {
+    var body: some View {
+        Button(action:{
+            print(sameints(list:[1,2,3,4,3,2]))
+            print(sameints(list:[5,5,5,5,5,5]))
+
+            print(sameints_reduce(list:[1,2,3,4,3,2]))
+            print(sameints_reduce(list:[5,5,5,5,5,5]))
+            
+            print("single peak: " , singlepeak(list:[1,2,3,4,1,2]))
+            print("single peak reduce: " , singlepeak_reduce(list:[1,2,3,4,1,2]))
+
+            var arr:[Int] = [2,3,4,5,6]
+
+            print(arr.reduce(0,{x,y in x+y}))
+
+            print(arr.reduce(0,{$0 + $1}))
+
+            print(arr.reduce(0) { $0 + $1 })
+            print(arr.reduce(0) { x,y in x + y })
+            print(arr.reduce(true) { $0 && $1 == arr.first })
+        },label:{
+            Text("Run")
+        })
+    }
+}
 //exercise 1
 func sameints(list:[Int])->Bool {
   if (list.count < 2){
@@ -25,11 +52,7 @@ func sameints_reduce(list:[Int])->Bool{
   }
 }
 
-print(sameints(list:[1,2,3,4,3,2]))
-print(sameints(list:[5,5,5,5,5,5]))
 
-print(sameints_reduce(list:[1,2,3,4,3,2]))
-print(sameints_reduce(list:[5,5,5,5,5,5]))
 
 //exercise 2
 func singlepeak(list:[Int])->Bool {
@@ -167,15 +190,7 @@ func singlepeak_reduce(list:[Int])->Bool {
   // }
 }
 
-print("single peak: " , singlepeak(list:[1,2,3,4,1,2]))
-print("single peak reduce: " , singlepeak_reduce(list:[1,2,3,4,1,2]))
 
-var arr:[Int] = [2,3,4,5,6]
-
-print(arr.reduce(0,{x,y in x+y}))
-
-print(arr.reduce(0,{$0 + $1}))
-
-print(arr.reduce(0) { $0 + $1 })
-print(arr.reduce(0) { x,y in x + y })
-print(arr.reduce(true) { $0 && $1 == arr.first })
+#Preview{
+    PlaygroundView()
+}

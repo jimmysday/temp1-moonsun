@@ -13,6 +13,6 @@ struct temp1_moonsunApp: App {
         WindowGroup {
             ContentView()
         }
- //       .modelContainer(for: degree.self)
+        .modelContainer(for: degree.self)
     }
 }
