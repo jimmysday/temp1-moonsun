@@ -11,7 +11,9 @@ struct ContentView: View {
  
     var body: some View {
         //MoonsunView()
-        GaugeView()
+        //GaugeView()
+        //GlobeView()
+        TempView()
     }
 }
 
