@@ -41,6 +41,7 @@ struct ModifyTempView: View {
             } onEditingChanged: { editing in
                 isEditing = editing
             }
+            .accessibilityIdentifier("TempSlider")
             
             TextField("", text:Binding(
                 get:{String(temperature.value)},
@@ -58,9 +59,13 @@ struct ModifyTempView: View {
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .background(isValid ? .green : .red)
             .focused($isDisplay)
+            .accessibilityIdentifier("TempTextField")
+
             Button("Keyboard"){
                 isDisplay = true
             }
+            .accessibilityIdentifier("ShowKeyboardButton")
+            
 //            .onAppear{isDisplay = true}
 //            Text("\(temperature.value)")
 //                .foregroundColor(isEditing ? .red : .blue)
@@ -73,6 +78,7 @@ struct ModifyTempView: View {
                     in: -50 ... 50,
                     step: 1
             )
+            .accessibilityIdentifier("TempStepper")
         }
     }
 }

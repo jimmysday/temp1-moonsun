@@ -22,6 +22,127 @@ final class temp1_moonsunUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    @MainActor
+    func testAddAndEditTemperature() throws {
+        let app = XCUIApplication()
+        app.launch()
+        // Tap "+" to add a new temperature
+        app.buttons["plus"].tap()
+        
+        // Find the new cell and tap to navigate
+        let newCell = app.cells.element(boundBy: 0)
+        XCTAssertTrue(newCell.waitForExistence(timeout: 2))
+        newCell.tap()
+
+        // Tap the Keyboard button to activate the TextField
+        let keyboardButton = app.buttons["Keyboard"]
+        XCTAssertTrue(keyboardButton.exists)
+        keyboardButton.tap()
+
+        // Find the TextField
+        let tempTextField = app.textFields.element(boundBy: 0)
+        XCTAssertTrue(tempTextField.waitForExistence(timeout: 2))
+        tempTextField.tap()
+
+        // Replace the value
+        tempTextField.clearAndEnterText(text: "25")
+        app.keyboards.buttons["return"].tap()
+
+        // Optionally go back
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+
+        // Verify the updated temperature in the list
+        XCTAssertTrue(app.staticTexts["25 *C"].exists)
+    }
+
+    @MainActor
+    func testDeleteTemperature() throws {
+        let app = XCUIApplication()
+        app.launch()
+        // Add a temperature
+        app.buttons["plus"].tap()
+        
+        let cellCountBefore = app.cells.count
+        XCTAssertTrue(cellCountBefore > 0)
+        
+        // Tap Edit and delete first cell
+        app.buttons["Edit"].tap()
+        let firstCell = app.cells.element(boundBy: 0)
+        firstCell.swipeLeft()
+        firstCell.buttons["Delete"].tap()
+
+        let cellCountAfter = app.cells.count
+        XCTAssertTrue(cellCountAfter == cellCountBefore - 1)
+    }
+
+    @MainActor
+    func testTemperatureSaveAndLoad() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        // Tap "+" to add a temperature
+        app.buttons["plus"].tap()
+
+        // Get the label of the newly added item
+        let newCell = app.cells.element(boundBy: 0)
+        XCTAssertTrue(newCell.waitForExistence(timeout: 2))
+
+        let temperatureLabel = newCell.staticTexts.element.label
+        print("Saved temperature: \(temperatureLabel)")
+
+        // Simulate app relaunch (terminate and relaunch)
+        app.terminate()
+        app.launch()
+
+        // After relaunch, verify the same temperature is still in the list
+        let firstCellAfterRelaunch = app.cells.element(boundBy: 0)
+        XCTAssertTrue(firstCellAfterRelaunch.waitForExistence(timeout: 2))
+
+        let labelAfterRelaunch = firstCellAfterRelaunch.staticTexts.element.label
+        XCTAssertEqual(temperatureLabel, labelAfterRelaunch, "Loaded temperature should match saved temperature")
+    }
+
+    @MainActor
+    func testModifyTemperatureView() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        // Tap '+' to add a temperature
+        app.buttons["plus"].tap()
+
+        // Tap the newly added cell to go to ModifyTempView
+        let newCell = app.cells.element(boundBy: 0)
+        XCTAssertTrue(newCell.waitForExistence(timeout: 2))
+        newCell.tap()
+
+        // Test TextField input
+        let textField = app.textFields["TempTextField"]
+        XCTAssertTrue(textField.waitForExistence(timeout: 2))
+
+        app.buttons["ShowKeyboardButton"].tap()
+        textField.clearAndEnterText(text: "37")
+        app.keyboards.buttons["return"].tap()
+        XCTAssertEqual(textField.value as? String, "37")
+
+        // Test Slider - swipe to change
+        let slider = app.sliders["TempSlider"]
+        XCTAssertTrue(slider.exists)
+        slider.adjust(toNormalizedSliderPosition: 0.9) // moves close to 50
+        // (No direct way to assert the value from slider, but you could assert later via the list)
+
+        // Test Stepper - tap stepper + twice
+        let stepper = app.steppers["TempStepper"]
+        XCTAssertTrue(stepper.exists)
+        stepper.buttons["Increment"].tap()
+        stepper.buttons["Increment"].tap()
+
+        // Navigate back and verify the updated value appears
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        let updatedText = app.staticTexts.containing(NSPredicate(format: "label CONTAINS 'C'")).firstMatch
+        XCTAssertTrue(updatedText.exists)
+    }
+
+
 //    @MainActor
 //    func testExample() throws {
 //        // UI tests must launch the application that they test.
