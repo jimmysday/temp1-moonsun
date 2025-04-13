@@ -20,10 +20,12 @@ struct GlobeView: View {
                 }
             }
             .toolbar{
-                Button(action:{
-                    showPicker.toggle()
+                ToolbarItemGroup {
+                    Button(action:{
+                        showPicker.toggle()
+                    }
+                    ,label:{Image(systemName: "paintbrush")})
                 }
-                ,label:{Image(systemName: "paintbrush")})
             }
             
         }
