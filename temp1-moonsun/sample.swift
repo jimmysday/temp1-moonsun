@@ -12,63 +12,65 @@ struct SampleView: View {
     @State private var isEditing: Bool = false
     
     var body: some View {
-        Text("\(number[3])")
-        
-        Image(systemName: images[number[0]][number[0]])
-            .resizable()
-            .scaledToFit()
-            .frame(width: 100, height: 100)
-            .onTapGesture {
-                self.number.shuffle()
-                self.images.shuffle()
+        VStack{ 
+            Text("\(number[3])")
+            
+            Image(systemName: images[number[0]][number[0]])
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 100)
+                .onTapGesture {
+                    self.number.shuffle()
+                    self.images.shuffle()
+                }
+                //.foregroundStyle(.tint)
+                .foregroundColor(Color.yellow)
+                .padding()
+
+            Toggle(
+                "Vibrate on Ring",
+                systemImage: "dot.radiowaves.left.and.right",
+                isOn: $vibrateOnRing
+            )
+
+            TextField("",text:Binding(
+                get: {String(sliderVal1)},
+                set: { newvalue in
+                    sliderVal1 = Int(newvalue) ?? 7
+                }))
+                .border(.black, width: 2)
+            
+            Stepper("",//\(sliderVal1) Rows/Columns",
+                    value: Binding(get: {
+                sliderVal1
+            }, set: { newValue in
+                sliderVal1 = newValue
+                UserDefaults.standard.set(sliderVal1, forKey: "rowVal")
+            }),
+                    in: 2...10)
+            .accessibilityIdentifier("settingStepperRow")
+            
+            
+            Slider(
+                value: Binding(
+                    get:{Double(sliderVal1)},
+                    set:{newvalue in sliderVal1 = Int(newvalue)}
+                ),
+                in: 0...100,
+                step: 5
+            ) {
+                Text("Speed")
+            } minimumValueLabel: {
+                Text("0")
+            } maximumValueLabel: {
+                Text("100")
+            } onEditingChanged: { editing in
+                isEditing = editing
             }
-            //.foregroundStyle(.tint)
-            .foregroundColor(Color.yellow)
-            .padding()
+            Text("\(sliderVal1)")
+                .foregroundColor(isEditing ? .red : .blue)
 
-        Toggle(
-               "Vibrate on Ring",
-               systemImage: "dot.radiowaves.left.and.right",
-               isOn: $vibrateOnRing
-           )
-
-        TextField("",text:Binding(
-            get: {String(sliderVal1)},
-            set: { newvalue in
-                sliderVal1 = Int(newvalue) ?? 7
-            }))
-        
-        Stepper("",//\(sliderVal1) Rows/Columns",
-                value: Binding(get: {
-            sliderVal1
-        }, set: { newValue in
-            sliderVal1 = newValue
-            UserDefaults.standard.set(sliderVal1, forKey: "rowVal")
-        }),
-                in: 2...10)
-        .accessibilityIdentifier("settingStepperRow")
-        
-        
-        Slider(
-            value: Binding(
-                get:{Double(sliderVal1)},
-                set:{newvalue in sliderVal1 = Int(newvalue)}
-            ),
-             in: 0...100,
-             step: 5
-         ) {
-             Text("Speed")
-         } minimumValueLabel: {
-             Text("0")
-         } maximumValueLabel: {
-             Text("100")
-         } onEditingChanged: { editing in
-             isEditing = editing
-         }
-         Text("\(sliderVal1)")
-             .foregroundColor(isEditing ? .red : .blue)
-
-
+        }
     }
 }
 
