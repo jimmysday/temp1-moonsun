@@ -11,6 +11,8 @@ struct SampleView: View {
     
     @State private var isEditing: Bool = false
     
+    @State private var postalCode: String = ""
+
     var body: some View {
         VStack{ 
             Text("\(number[3])")
@@ -39,6 +41,10 @@ struct SampleView: View {
                     sliderVal1 = Int(newvalue) ?? 7
                 }))
                 .border(.black, width: 2)
+
+            SecureField("Secure Line of Text", text: $text)
+            TextEditor(text: $lines)
+             .border(.black, width: 2)
             
             Stepper("",//\(sliderVal1) Rows/Columns",
                     value: Binding(get: {
@@ -70,6 +76,34 @@ struct SampleView: View {
             Text("\(sliderVal1)")
                 .foregroundColor(isEditing ? .red : .blue)
 
+            PostalCodeField(postalCode: $postalCode)
+
+        }
+    }
+}
+
+struct PostalCodeField: View {
+    @Binding var postalCode: String
+    @State private var error = false
+    var body: some View {
+    VStack{
+        TextField(
+            "Postal Code",
+            text: Binding(
+                    get: {
+                        postalCode
+                    },
+                    set: {
+                        newValue in
+                        let regex = /[A-Z]\d[A-Z]\s*\d[A-Z]\d/
+                        error = newValue.wholeMatch(of: regex) == nil
+                        postalCode = newValue
+                    }
+                )
+            )
+            if error {
+                Text("Invalid Postal Code")
+            }
         }
     }
 }

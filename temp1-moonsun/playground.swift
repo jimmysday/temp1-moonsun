@@ -20,6 +20,53 @@ struct PlaygroundView: View {
             print(arr.reduce(0) { $0 + $1 })
             print(arr.reduce(0) { x,y in x + y })
             print(arr.reduce(true) { $0 && $1 == arr.first })
+
+            let gpa = 9.0
+            print("My GPA is \(gpa)")
+            print("My GPA is", gpa)
+            print("My GPA is " + String(gpa))
+            print("My GPA is", gpa, separator:"...", terminator:"!")// Prints out "My GPA is...9.0!"
+
+
+            var statHolidays:string = []
+            statHolidays.append("Christmas")
+            statHolidays += ["Boxing Day", "New Year's Day", "FamilyDay"]
+          
+            statHolidays.insert("Remembrance Day", at: 0)
+   
+            statHolidays.remove(at: 0)
+
+            for i in 0...10 {
+             print(i)
+            }
+
+            for j: UInt in stride(from:10, through:100, by:10) {
+            print(j)
+            }
+    
+            for j: UInt in stride(from:10, to:100, by:10) {
+            print(j)
+            }
+
+            var i: UInt = 0
+            repeat {
+            i += 1
+            } while i < 100
+            print(i)
+
+
+
+          let temperature = 10
+          print("\(temperature)\u{00B0}") // Output: 10°
+          print("\(temperature)°") // Output: 10°
+
+        let list = [1,2,3,4,5]
+        let x = list.map { if $0 % 2 == 0 { "Even" } else { "Odd" }}
+
+        let x = ["1", "2", "3"]
+        print( x.joined(separator: " ")) 
+
+      
         },label:{
             Text("Run")
         })
