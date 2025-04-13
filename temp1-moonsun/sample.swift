@@ -112,6 +112,20 @@ struct PostalCodeField: View {
     }
 }
 
+struct ForEachView: View {
+    @State private var capitals = ["Victoria", "Edmonton"]
+    var body: some View {
+        VStack {
+            List {
+                ForEach(capitals, id: \.self) { capital in
+                    Text(capital)
+                }
+            }
+        }
+        .padding()
+    }
+}
+
 #Preview {
     SampleView()
 }
