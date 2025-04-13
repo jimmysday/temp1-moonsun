@@ -60,13 +60,55 @@ struct PlaygroundView: View {
           print("\(temperature)\u{00B0}") // Output: 10°
           print("\(temperature)°") // Output: 10°
 
-        let list = [1,2,3,4,5]
-        let x = list.map { if $0 % 2 == 0 { "Even" } else { "Odd" }}
+          let list = [1,2,3,4,5]
+          let x = list.map { if $0 % 2 == 0 { "Even" } else { "Odd" }}
 
-        let s = ["1", "2", "3"]
-        print( s.joined(separator: " ")) 
+          let s = ["1", "2", "3"]
+          print( s.joined(separator: " ")) 
 
-      
+          var marks = [nil, 9, 10, 1, 9, 8]
+          let (total, count) = marks.reduce((0, 0)) {
+            let (sum, cnt) = $0
+            if $1 == nil {
+              return (sum, cnt)
+            }
+            return (sum + $1!, cnt + 1)
+          }
+          if (count > 0) {
+            print("Average is", Double(total) / Double(count))
+          }
+
+          for day in days {
+            print(day, terminator:": ")
+            switch day {
+              case "Monday" :
+              print("The work week begins...")
+              case "Friday":
+              print("The work week ends...")
+              case "Saturday":
+              fallthrough
+              case "Sunday":
+              print("Weekend...")
+              default :
+              print("")
+            }
+          }
+
+          //import UIKit // Required for URL below
+          func download(url: URL?) -> String {
+            if url != nil {
+              do {
+                return try String(contentsOf: url!)
+              }
+              catch { // catch == catch let error
+                return "Error: \(error)"
+              }
+            }
+            return ""
+          }
+          print(download(url: URL(string:"http://deepblue.cs.camosun.bc.ca")))
+
+
         },label:{
             Text("Run")
         })
