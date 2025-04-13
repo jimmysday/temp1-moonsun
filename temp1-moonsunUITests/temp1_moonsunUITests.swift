@@ -76,7 +76,8 @@ final class temp1_moonsunUITests: XCTestCase {
         tempTextField.tap()
 
         // Replace the value
-        tempTextField.clearAndEnterText(text: "25")
+        //tempTextField.clearAndEnterText(text: "25")
+        tempTextField.clearAndEnterText(text:"25")
         app.keyboards.buttons["return"].tap()
 
         // Optionally go back

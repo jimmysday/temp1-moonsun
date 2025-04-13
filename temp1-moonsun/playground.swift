@@ -78,6 +78,7 @@ struct PlaygroundView: View {
             print("Average is", Double(total) / Double(count))
           }
 
+            var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
           for day in days {
             print(day, terminator:": ")
             switch day {
