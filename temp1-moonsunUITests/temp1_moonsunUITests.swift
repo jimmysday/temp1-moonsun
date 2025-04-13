@@ -7,6 +7,37 @@
 
 import XCTest
 
+// 👇 This goes outside of any class or function
+extension XCUIElement {
+    func clearAndEnterText(text: String) {
+        guard self.exists, self.isHittable else { return }
+
+        self.tap()
+        
+        if let stringValue = self.value as? String {
+            let deleteString = String(repeating: XCUIKeyboardKey.delete.rawValue, count: stringValue.count)
+            self.typeText(deleteString)
+        }
+        
+        self.typeText(text)
+    }
+}
+
+class YourUITests: XCTestCase {
+    func testExample() {
+        let app = XCUIApplication()
+        app.launch()
+
+        let tempTextField = app.textFields.element(boundBy: 0)
+        XCTAssertTrue(tempTextField.waitForExistence(timeout: 2))
+        tempTextField.tap()
+
+        tempTextField.clearAndEnterText(text: "25")
+        app.keyboards.buttons["return"].tap()
+    }
+}
+
+
 final class temp1_moonsunUITests: XCTestCase {
 
     override func setUpWithError() throws {

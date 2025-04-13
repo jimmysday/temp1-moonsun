@@ -12,6 +12,10 @@ struct SampleView: View {
     @State private var isEditing: Bool = false
     
     @State private var postalCode: String = ""
+    
+    @State private var text:String = " "
+    
+    @State private var lines:String = " "
 
     var body: some View {
         VStack{ 

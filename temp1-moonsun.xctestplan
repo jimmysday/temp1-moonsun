@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "0C7A26AC-D925-42B0-9E1A-4E4D0FFFC5DC",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:temp1-moonsun.xcodeproj",
+        "identifier" : "F34BCD912DA997A100F321E7",
+        "name" : "temp1-moonsunUITests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:temp1-moonsun.xcodeproj",
+        "identifier" : "F34BCD872DA997A100F321E7",
+        "name" : "temp1-moonsunTests"
+      }
+    }
+  ],
+  "version" : 1
+}

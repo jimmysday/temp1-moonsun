@@ -28,7 +28,7 @@ struct PlaygroundView: View {
             print("My GPA is", gpa, separator:"...", terminator:"!")// Prints out "My GPA is...9.0!"
 
 
-            var statHolidays:string = []
+            var statHolidays: [String] = []
             statHolidays.append("Christmas")
             statHolidays += ["Boxing Day", "New Year's Day", "FamilyDay"]
           
@@ -63,8 +63,8 @@ struct PlaygroundView: View {
         let list = [1,2,3,4,5]
         let x = list.map { if $0 % 2 == 0 { "Even" } else { "Odd" }}
 
-        let x = ["1", "2", "3"]
-        print( x.joined(separator: " ")) 
+        let s = ["1", "2", "3"]
+        print( s.joined(separator: " ")) 
 
       
         },label:{
